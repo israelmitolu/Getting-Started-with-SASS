@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
