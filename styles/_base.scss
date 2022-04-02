@@ -33,3 +33,13 @@ img {
 }
 
 // Mixins
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin grid {
+  display: grid;
+  gap: 1.5rem;
+}

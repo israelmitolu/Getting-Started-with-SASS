@@ -13,11 +13,11 @@ $body-color: #ffffff;
 
 /* Font and typography */
 $body-font: "Raleway", sans-serif;
-$biggest-font-size: 2rem;
+$h1-font-size: 2rem;
 $normal-font-size: 0.938rem;
 
 @media screen and (min-width: 968px) {
-  $biggest-font-size: 3rem;
+  $h1-font-size: 3rem;
   $normal-font-size: 1rem;
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SASS Demo</title>
     <link rel="stylesheet" href="/styles/main.css" />
-    <!--========== BOX ICONS ==========-->
+    <!-- BOX ICONS -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,8 +14,8 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="l-header">
-      <nav class="nav bd-container">
+    <header>
+      <nav class="nav container-layout">
         <a href="#" class="nav__logo">Mindful.</a>
 
         <div class="nav__menu" id="nav-menu">
@@ -43,7 +43,7 @@
 
     <!-- Hero -->
     <section class="home">
-      <div class="home__container bd-container bd-grid">
+      <div class="home__container container-layout grid-layout">
         <div class="home__img">
           <img
             src="./img/Mental health-bro.svg"
@@ -65,7 +65,7 @@
     </section>
 
     <script>
-      /* Show Menu */
+      /* Toggle Responsive menu */
       const showMenu = (toggleId, navId) => {
         const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId);

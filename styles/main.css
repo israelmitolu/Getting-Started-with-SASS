@@ -5,27 +5,6 @@
 /* Font and typography */
 /* Font weight */
 /* Margins */
-.bd-container {
-  max-width: 968px;
-  width: calc(100% - 3rem);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.bd-grid {
-  display: -ms-grid;
-  display: grid;
-  gap: 1.5rem;
-}
-
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-}
-
 *,
 ::before,
 ::after {
@@ -61,6 +40,27 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container-layout {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid-layout {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
 }
 
 .button {
@@ -165,12 +165,39 @@ img {
 }
 
 /* header */
-.l-header {
+header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #ffffff;
+}
+
+.home__container {
+  row-gap: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.home__img {
+  width: 280px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-bottom: 1.5rem;
 }
 
 /* For full-screen images on small screens */
@@ -215,6 +242,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -232,7 +262,7 @@ img {
 }
 
 @media screen and (min-width: 968px) {
-  .bd-container {
+  .container-layout {
     margin-left: auto;
     margin-right: auto;
   }
@@ -245,7 +275,7 @@ img {
   }
 }
 
-/* Show menu */
+/* Show menu when toggled */
 .show-menu {
   top: calc(3rem + 1rem);
 }

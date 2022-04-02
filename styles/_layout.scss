@@ -1,16 +1,15 @@
-.bd-container {
+.container-layout {
   max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: $mb-3;
   margin-right: $mb-3;
 }
 
-.bd-grid {
-  display: grid;
-  gap: 1.5rem;
+.grid-layout {
+  @include grid();
 }
 
-.l-header {
+header {
   width: 100%;
   position: fixed;
   top: 0;

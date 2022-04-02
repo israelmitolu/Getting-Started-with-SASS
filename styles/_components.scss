@@ -26,9 +26,7 @@
 // Navbar
 .nav {
   height: $header-height;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex();
 
   &__menu {
     @media screen and (max-width: 768px) {
@@ -90,7 +88,7 @@
 }
 
 /* header */
-.l-header {
+header {
   width: 100%;
   position: fixed;
   top: 0;

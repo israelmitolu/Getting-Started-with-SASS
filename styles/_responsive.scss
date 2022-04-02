@@ -38,8 +38,7 @@
     height: calc(#{$header-height} + 1.5rem);
 
     &__list {
-      display: flex;
-      align-items: center;
+      @include flex();
     }
     &__item {
       margin-left: $mb-5;
@@ -56,7 +55,7 @@
 }
 
 @media screen and (min-width: 968px) {
-  .bd-container {
+  .container-layout {
     margin-left: auto;
     margin-right: auto;
   }
@@ -70,7 +69,7 @@
   }
 }
 
-/* Show menu */
+/* Show menu when toggled */
 .show-menu {
   top: calc(#{$header-height} + 1rem);
 }
