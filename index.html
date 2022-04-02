@@ -4,10 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>SASS Demo</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Sassy</h1>
+    <!-- Navbar -->
+    <header class="l-header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Mindful.</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"
+              ><a href="#home" class="nav__link active-link">Home</a></li
+            >
+            <li class="nav__item"
+              ><a href="#about" class="nav__link">About</a></li
+            >
+            <li class="nav__item"
+              ><a href="#blog" class="nav__link">Blog</a></li
+            >
+            <li class="nav__item"
+              ><a href="#contact" class="nav__link">Contact</a></li
+            >
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__img">
+          <img
+            src="./img/Mental health-bro.svg"
+            alt=">People illustrations by Storyset"
+          />
+        </div>
+
+        <div class="home__data">
+          <h1 class="home__title">Meditation and Mindfulness.</h1>
+          <p class="home__description"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            molestias consequuntur. Incidunt, voluptates hic. Ab voluptates
+            exercitationem dolor ex autem aut vitae, corporis voluptatum fuga
+            eos quasi quisquam vero maiores?</p
+          >
+          <a href="#" class="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      /* Show Menu */
+      const showMenu = (toggleId, navId) => {
+        const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId);
+
+        // Validate that variables exist
+        if (toggle && nav) {
+          toggle.addEventListener("click", () => {
+            // We add the show-menu class to the div tag with the nav__menu class
+            nav.classList.toggle("show-menu");
+          });
+        }
+      };
+      showMenu("nav-toggle", "nav-menu");
+    </script>
   </body>
 </html>

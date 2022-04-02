@@ -1,0 +1,99 @@
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: $font-semi-bold;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $first-color-alt;
+  }
+
+  &-link {
+    background: none;
+    padding: 0;
+    color: $first-color;
+
+    &:hover {
+      background-color: transparent;
+      color: $first-color-alt;
+    }
+  }
+}
+
+// Navbar
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      padding: 2.5rem 0 0;
+      text-align: center;
+      background-color: $body-color;
+      transition: 0.4s;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      border-radius: 2rem;
+    }
+  }
+  &__item {
+    margin-bottom: $mb-3;
+  }
+  &__link,
+  &__logo,
+  &__toggle {
+    color: $title-color;
+    font-weight: $font-semi-bold;
+  }
+  &__logo {
+    &:hover {
+      color: $first-color;
+    }
+  }
+  &__link {
+    transition: 0.3s;
+
+    &:hover {
+      color: $first-color;
+    }
+  }
+  &__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+/* Active menu link */
+.active-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: $title-color;
+    border-radius: 50%;
+  }
+}
+
+/* header */
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $body-color;
+}

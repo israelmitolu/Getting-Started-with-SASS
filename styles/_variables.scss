@@ -1,0 +1,34 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+/* Layout */
+$header-height: 3rem;
+
+/* Colors */
+$first-color: #92e3a9;
+$first-color-alt: #4fe378;
+$title-color: #161212;
+$text-color: #5b5757;
+$body-color: #ffffff;
+
+/* Font and typography */
+$body-font: "Raleway", sans-serif;
+$biggest-font-size: 2rem;
+$normal-font-size: 0.938rem;
+
+@media screen and (min-width: 968px) {
+  $biggest-font-size: 3rem;
+  $normal-font-size: 1rem;
+}
+
+/* Font weight */
+$font-semi-bold: 600;
+$font-bold: 700;
+
+/* Margins */
+$mb-1: 0.5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
